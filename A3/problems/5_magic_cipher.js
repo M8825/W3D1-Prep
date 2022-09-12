@@ -13,7 +13,15 @@ magicCipher("twmce" , { m : "n", t : "d", w : "a"}) => "dance"
 
 function magicCipher(sentence, cipher){
   // your code here...
+  let arrSentence = sentence.split('');
 
+  for (let i = 0; i < arrSentence.length; i++) {
+    if (cipher[arrSentence[i]] !== undefined) {
+      arrSentence[i] = cipher[arrSentence[i]];
+    }
+  }
+
+  return arrSentence.join('');
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

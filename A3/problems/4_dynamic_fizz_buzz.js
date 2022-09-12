@@ -11,7 +11,15 @@ dynamicFizzBuzz(20, 4, 6) => [4, 6, 8, 16, 18]
 
 function dynamicFizzBuzz(max, num1, num2){
   // your code here...
+  let arrDynam = [];
 
+  for (let i = 0; i < max; i++) {
+    if ((i % num1 === 0 || i % num2 === 0) && !(i % num1 === 0 && i % num2 === 0)) {
+      arrDynam.push(i);
+    }
+  }
+
+  return arrDynam;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

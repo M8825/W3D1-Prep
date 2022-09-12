@@ -12,6 +12,15 @@ leastCommonMultiple(24, 26) => 312
 function leastCommonMultiple(num1, num2) {
   // your code here...
 
+  i = 1;
+  while (true) {
+    if (i % num1 === 0 && i % num2 === 0) {
+      return i
+    }
+
+    i++;
+  }
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
